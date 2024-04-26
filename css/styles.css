@@ -24,7 +24,6 @@ img {
   width: 70%;
   height: auto;
   border-radius: 8px; 
-  grid-row: span 1;
   position: relative;
   z-index: 0
 }
@@ -68,6 +67,12 @@ figure {
 .tooltip-text {
   font-size: 20px;
 }
+
+.end .image-container,
+.end figure {
+  width: 100%;
+}
+
 
 footer {
   padding: 30px;
