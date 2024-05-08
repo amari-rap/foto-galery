@@ -15,7 +15,7 @@ header {
   font-weight: 700;
 }
 
-.grid-container {
+main {
   display: flex;
   justify-content: center;
 }
@@ -33,13 +33,15 @@ figure {
   margin: 0px;
   display: flex;
   justify-content: center;
+  transition: width 1s ease-in;
 }
 
-.image-container {
+#image-container {
   position: relative;
   display: flex;
   justify-content: center;
   width: 70%;
+  transition: width 1s ease-in;
 }
 
 .tooltip {
@@ -58,7 +60,7 @@ figure {
   transition: opacity 0.3s ease;
 }
 
-.image-container:hover .tooltip {
+#image-container:hover .tooltip {
   visibility: visible;
   opacity: 1;
   width: 90%;
@@ -68,11 +70,10 @@ figure {
   font-size: 20px;
 }
 
-.end .image-container,
+.end #image-container,
 .end figure {
   width: 100%;
 }
-
 
 footer {
   padding: 30px;

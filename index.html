@@ -14,18 +14,16 @@
     <h1>The Art of Noticing</h1>
   </header>
 
-  <main class="grid-container">
+  <main>
     
-    <div class="end">
       <figure>
-        <div class="image-container">
+        <div id="image-container">
           <img src="img/Froschperspektive_Baum_quer.JPG" alt="Froschperspektive - 55mm f/25 1/80Sek. ISO-100">
           <div class="tooltip">
             <span class="tooltip-text">Froschperspektive <br> <br> 55mm f/25 1/80Sek. ISO-100</span>
           </div>
         </div>
       </figure>
-  </div>
 
   </main>
 
@@ -34,4 +32,15 @@
     <p>Design und Bilder von Chiara Benetazzo und Amari Alina Rapior.</p>
   </footer>
 </body>
+  <script>
+    function toggleClass(){
+      if (document.body.className=="end"){      // == Vergleichen
+        document.body.className="";             // = bestimmen
+      } else {   
+        document.body.className="end"; 
+      }  
+    };
+    var image = document .getElementById ("image-container");
+    image.addEventListener ("click",toggleClass);
+  </script>
 </html>
